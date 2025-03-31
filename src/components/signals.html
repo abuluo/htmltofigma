@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>信号 - Telegram 带单信号</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <div class="sticky top-0 z-10 bg-white border-b border-gray-200">
+        <div class="px-4 py-3">
+            <div class="flex items-center justify-between mb-4">
+                <h1 class="text-xl font-semibold">交易信号</h1>
+                <button class="text-gray-600">
+                    <i class="fas fa-filter text-xl"></i>
+                </button>
+            </div>
+            <!-- Filter Tabs -->
+            <div class="flex space-x-4 overflow-x-auto pb-2">
+                <button class="px-4 py-2 text-sm font-medium text-blue-600 border-b-2 border-blue-600">
+                    全部
+                </button>
+                <button class="px-4 py-2 text-sm font-medium text-gray-500 hover:text-gray-700">
+                    BTC
+                </button>
+                <button class="px-4 py-2 text-sm font-medium text-gray-500 hover:text-gray-700">
+                    ETH
+                </button>
+                <button class="px-4 py-2 text-sm font-medium text-gray-500 hover:text-gray-700">
+                    BNB
+                </button>
+                <button class="px-4 py-2 text-sm font-medium text-gray-500 hover:text-gray-700">
+                    其他
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="p-4 space-y-4">
+        <!-- Signal List -->
+        <div class="space-y-4">
+            <!-- Signal Card 1 -->
+            <div class="signal-card bg-white p-4">
+                <div class="flex items-center justify-between mb-3">
+                    <div class="flex items-center space-x-2">
+                        <img src="https://ui-avatars.com/api/?name=Trader+1" alt="Trader" class="w-8 h-8 rounded-full">
+                        <div>
+                            <span class="font-medium">Trader 1</span>
+                            <div class="flex items-center text-sm text-gray-500">
+                                <span class="status-indicator status-active"></span>
+                                <span>活跃</span>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="text-sm text-gray-500">2分钟前</span>
+                </div>
+                <div class="space-y-2">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center space-x-2">
+                            <img src="https://cryptologos.cc/logos/bitcoin-btc-logo.png" alt="BTC" class="w-6 h-6">
+                            <span class="text-gray-600">BTC/USDT</span>
+                        </div>
+                        <span class="text-green-600 font-medium">做多</span>
+                    </div>
+                    <div class="flex items-center justify-between text-sm">
+                        <span class="text-gray-500">入场价格</span>
+                        <span class="font-medium">$45,000</span>
+                    </div>
+                    <div class="flex items-center justify-between text-sm">
+                        <span class="text-gray-500">止损价格</span>
+                        <span class="font-medium">$44,500</span>
+                    </div>
+                    <div class="flex items-center justify-between text-sm">
+                        <span class="text-gray-500">止盈价格</span>
+                        <span class="font-medium">$46,000</span>
+                    </div>
+                    <div class="flex items-center justify-between text-sm">
+                        <span class="text-gray-500">风险等级</span>
+                        <span class="text-yellow-500 font-medium">中等</span>
+                    </div>
+                </div>
+                <div class="mt-4 flex space-x-2">
+                    <button class="flex-1 btn-primary text-white py-2 rounded-lg">
+                        立即跟单
+                    </button>
+                    <button class="flex-1 border border-gray-200 py-2 rounded-lg">
+                        查看详情
+                    </button>
+                </div>
+            </div>
+
+            <!-- Signal Card 2 -->
+            <div class="signal-card bg-white p-4">
+                <div class="flex items-center justify-between mb-3">
+                    <div class="flex items-center space-x-2">
+                        <img src="https://ui-avatars.com/api/?name=Trader+2" alt="Trader" class="w-8 h-8 rounded-full">
+                        <div>
+                            <span class="font-medium">Trader 2</span>
+                            <div class="flex items-center text-sm text-gray-500">
+                                <span class="status-indicator status-active"></span>
+                                <span>活跃</span>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="text-sm text-gray-500">5分钟前</span>
+                </div>
+                <div class="space-y-2">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center space-x-2">
+                            <img src="https://cryptologos.cc/logos/ethereum-eth-logo.png" alt="ETH" class="w-6 h-6">
+                            <span class="text-gray-600">ETH/USDT</span>
+                        </div>
+                        <span class="text-red-600 font-medium">做空</span>
+                    </div>
+                    <div class="flex items-center justify-between text-sm">
+                        <span class="text-gray-500">入场价格</span>
+                        <span class="font-medium">$2,800</span>
+                    </div>
+                    <div class="flex items-center justify-between text-sm">
+                        <span class="text-gray-500">止损价格</span>
+                        <span class="font-medium">$2,850</span>
+                    </div>
+                    <div class="flex items-center justify-between text-sm">
+                        <span class="text-gray-500">止盈价格</span>
+                        <span class="font-medium">$2,700</span>
+                    </div>
+                    <div class="flex items-center justify-between text-sm">
+                        <span class="text-gray-500">风险等级</span>
+                        <span class="text-green-500 font-medium">低</span>
+                    </div>
+                </div>
+                <div class="mt-4 flex space-x-2">
+                    <button class="flex-1 btn-primary text-white py-2 rounded-lg">
+                        立即跟单
+                    </button>
+                    <button class="flex-1 border border-gray-200 py-2 rounded-lg">
+                        查看详情
+                    </button>
+                </div>
+            </div>
+
+            <!-- Signal Card 3 -->
+            <div class="signal-card bg-white p-4">
+                <div class="flex items-center justify-between mb-3">
+                    <div class="flex items-center space-x-2">
+                        <img src="https://ui-avatars.com/api/?name=Trader+3" alt="Trader" class="w-8 h-8 rounded-full">
+                        <div>
+                            <span class="font-medium">Trader 3</span>
+                            <div class="flex items-center text-sm text-gray-500">
+                                <span class="status-indicator status-pending"></span>
+                                <span>等待中</span>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="text-sm text-gray-500">10分钟前</span>
+                </div>
+                <div class="space-y-2">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center space-x-2">
+                            <img src="https://cryptologos.cc/logos/bnb-bnb-logo.png" alt="BNB" class="w-6 h-6">
+                            <span class="text-gray-600">BNB/USDT</span>
+                        </div>
+                        <span class="text-green-600 font-medium">做多</span>
+                    </div>
+                    <div class="flex items-center justify-between text-sm">
+                        <span class="text-gray-500">入场价格</span>
+                        <span class="font-medium">$320</span>
+                    </div>
+                    <div class="flex items-center justify-between text-sm">
+                        <span class="text-gray-500">止损价格</span>
+                        <span class="font-medium">$315</span>
+                    </div>
+                    <div class="flex items-center justify-between text-sm">
+                        <span class="text-gray-500">止盈价格</span>
+                        <span class="font-medium">$330</span>
+                    </div>
+                    <div class="flex items-center justify-between text-sm">
+                        <span class="text-gray-500">风险等级</span>
+                        <span class="text-red-500 font-medium">高</span>
+                    </div>
+                </div>
+                <div class="mt-4 flex space-x-2">
+                    <button class="flex-1 btn-primary text-white py-2 rounded-lg">
+                        立即跟单
+                    </button>
+                    <button class="flex-1 border border-gray-200 py-2 rounded-lg">
+                        查看详情
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 

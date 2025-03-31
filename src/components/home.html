@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首页 - Telegram 带单信号</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="bg-gray-50">
+    <!-- iOS Status Bar -->
+    <div class="h-[44px] bg-black text-white flex items-center justify-between px-4 text-sm">
+        <span>9:41</span>
+        <div class="flex items-center space-x-2">
+            <i class="fas fa-signal"></i>
+            <i class="fas fa-wifi"></i>
+            <i class="fas fa-battery-full"></i>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <div class="sticky top-0 z-10 bg-white border-b border-gray-200">
+        <div class="px-4 py-3 flex items-center justify-between">
+            <h1 class="text-xl font-semibold">Telegram 带单信号</h1>
+            <div class="flex items-center space-x-4">
+                <button class="text-gray-600">
+                    <i class="fas fa-bell text-xl"></i>
+                </button>
+                <button class="text-gray-600">
+                    <i class="fas fa-cog text-xl"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="h-[calc(100vh-44px-49px)] overflow-y-auto">
+        <div class="p-4 space-y-6">
+            <!-- Quick Actions -->
+            <div class="grid grid-cols-2 gap-4">
+                <a href="#" class="bg-white p-4 rounded-xl shadow-sm flex items-center space-x-3">
+                    <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+                        <i class="fas fa-chart-line text-blue-600 text-xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-medium">发布信号</h3>
+                        <p class="text-sm text-gray-500">快速发布交易信号</p>
+                    </div>
+                </a>
+                <a href="#" class="bg-white p-4 rounded-xl shadow-sm flex items-center space-x-3">
+                    <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
+                        <i class="fas fa-robot text-green-600 text-xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-medium">自动跟单</h3>
+                        <p class="text-sm text-gray-500">设置自动跟单策略</p>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Latest Signals -->
+            <div>
+                <h2 class="text-lg font-semibold mb-4">最新信号</h2>
+                <div class="space-y-4">
+                    <!-- Signal Card 1 -->
+                    <div class="signal-card bg-white p-4">
+                        <div class="flex items-center justify-between mb-3">
+                            <div class="flex items-center space-x-2">
+                                <img src="https://ui-avatars.com/api/?name=Trader+1" alt="Trader" class="w-8 h-8 rounded-full">
+                                <span class="font-medium">Trader 1</span>
+                            </div>
+                            <span class="text-sm text-gray-500">2分钟前</span>
+                        </div>
+                        <div class="space-y-2">
+                            <div class="flex items-center justify-between">
+                                <span class="text-gray-600">BTC/USDT</span>
+                                <span class="text-green-600 font-medium">做多</span>
+                            </div>
+                            <div class="flex items-center justify-between text-sm">
+                                <span class="text-gray-500">入场价格</span>
+                                <span class="font-medium">$45,000</span>
+                            </div>
+                            <div class="flex items-center justify-between text-sm">
+                                <span class="text-gray-500">止损价格</span>
+                                <span class="font-medium">$44,500</span>
+                            </div>
+                            <div class="flex items-center justify-between text-sm">
+                                <span class="text-gray-500">止盈价格</span>
+                                <span class="font-medium">$46,000</span>
+                            </div>
+                        </div>
+                        <div class="mt-4 flex space-x-2">
+                            <button class="flex-1 btn-primary text-white py-2 rounded-lg">
+                                立即跟单
+                            </button>
+                            <button class="flex-1 border border-gray-200 py-2 rounded-lg">
+                                查看详情
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Signal Card 2 -->
+                    <div class="signal-card bg-white p-4">
+                        <div class="flex items-center justify-between mb-3">
+                            <div class="flex items-center space-x-2">
+                                <img src="https://ui-avatars.com/api/?name=Trader+2" alt="Trader" class="w-8 h-8 rounded-full">
+                                <span class="font-medium">Trader 2</span>
+                            </div>
+                            <span class="text-sm text-gray-500">5分钟前</span>
+                        </div>
+                        <div class="space-y-2">
+                            <div class="flex items-center justify-between">
+                                <span class="text-gray-600">ETH/USDT</span>
+                                <span class="text-red-600 font-medium">做空</span>
+                            </div>
+                            <div class="flex items-center justify-between text-sm">
+                                <span class="text-gray-500">入场价格</span>
+                                <span class="font-medium">$2,800</span>
+                            </div>
+                            <div class="flex items-center justify-between text-sm">
+                                <span class="text-gray-500">止损价格</span>
+                                <span class="font-medium">$2,850</span>
+                            </div>
+                            <div class="flex items-center justify-between text-sm">
+                                <span class="text-gray-500">止盈价格</span>
+                                <span class="font-medium">$2,700</span>
+                            </div>
+                        </div>
+                        <div class="mt-4 flex space-x-2">
+                            <button class="flex-1 btn-primary text-white py-2 rounded-lg">
+                                立即跟单
+                            </button>
+                            <button class="flex-1 border border-gray-200 py-2 rounded-lg">
+                                查看详情
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Top Traders -->
+            <div>
+                <h2 class="text-lg font-semibold mb-4">热门带单员</h2>
+                <div class="grid grid-cols-2 gap-4">
+                    <!-- Trader Card 1 -->
+                    <div class="trader-card bg-white">
+                        <img src="https://ui-avatars.com/api/?name=Trader+1&size=200" alt="Trader" class="w-full h-32 object-cover">
+                        <div class="p-4">
+                            <h3 class="font-medium">Trader 1</h3>
+                            <div class="flex items-center mt-2">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <span class="ml-1 text-sm text-gray-600">4.9 (128)</span>
+                            </div>
+                            <div class="mt-2 text-sm text-gray-500">
+                                <p>胜率: 85%</p>
+                                <p>总收益: +256%</p>
+                            </div>
+                            <button class="mt-3 w-full btn-telegram text-white py-2 rounded-lg">
+                                关注
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Trader Card 2 -->
+                    <div class="trader-card bg-white">
+                        <img src="https://ui-avatars.com/api/?name=Trader+2&size=200" alt="Trader" class="w-full h-32 object-cover">
+                        <div class="p-4">
+                            <h3 class="font-medium">Trader 2</h3>
+                            <div class="flex items-center mt-2">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <span class="ml-1 text-sm text-gray-600">4.8 (96)</span>
+                            </div>
+                            <div class="mt-2 text-sm text-gray-500">
+                                <p>胜率: 82%</p>
+                                <p>总收益: +198%</p>
+                            </div>
+                            <button class="mt-3 w-full btn-telegram text-white py-2 rounded-lg">
+                                关注
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- iOS Tab Bar -->
+    <div class="h-[49px] bg-white border-t border-gray-200 fixed bottom-0 w-full flex items-center justify-around">
+        <a href="home.html" class="flex flex-col items-center text-blue-600">
+            <i class="fas fa-home text-xl"></i>
+            <span class="text-xs mt-1">首页</span>
+        </a>
+        <a href="signals.html" class="flex flex-col items-center text-gray-600">
+            <i class="fas fa-chart-line text-xl"></i>
+            <span class="text-xs mt-1">信号</span>
+        </a>
+        <a href="traders.html" class="flex flex-col items-center text-gray-600">
+            <i class="fas fa-users text-xl"></i>
+            <span class="text-xs mt-1">带单员</span>
+        </a>
+        <a href="profile.html" class="flex flex-col items-center text-gray-600">
+            <i class="fas fa-user text-xl"></i>
+            <span class="text-xs mt-1">我的</span>
+        </a>
+    </div>
+</body>
+</html> 

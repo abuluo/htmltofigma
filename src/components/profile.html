@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的 - Telegram 带单信号</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <div class="sticky top-0 z-10 bg-white border-b border-gray-200">
+        <div class="px-4 py-3">
+            <h1 class="text-xl font-semibold">我的</h1>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="p-4 space-y-6">
+        <!-- User Profile -->
+        <div class="bg-white rounded-xl p-4">
+            <div class="flex items-center space-x-4">
+                <img src="https://ui-avatars.com/api/?name=User&size=100" alt="User" class="w-20 h-20 rounded-full">
+                <div>
+                    <h2 class="text-xl font-semibold">用户名</h2>
+                    <p class="text-gray-500">ID: 123456</p>
+                </div>
+            </div>
+            <div class="mt-4 grid grid-cols-3 gap-4 text-center">
+                <div>
+                    <div class="text-xl font-bold">128</div>
+                    <div class="text-sm text-gray-500">关注</div>
+                </div>
+                <div>
+                    <div class="text-xl font-bold">256</div>
+                    <div class="text-sm text-gray-500">粉丝</div>
+                </div>
+                <div>
+                    <div class="text-xl font-bold">64</div>
+                    <div class="text-sm text-gray-500">信号</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Quick Actions -->
+        <div class="grid grid-cols-2 gap-4">
+            <a href="#" class="bg-white p-4 rounded-xl shadow-sm flex items-center space-x-3">
+                <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+                    <i class="fas fa-chart-line text-blue-600 text-xl"></i>
+                </div>
+                <div>
+                    <h3 class="font-medium">发布信号</h3>
+                    <p class="text-sm text-gray-500">快速发布交易信号</p>
+                </div>
+            </a>
+            <a href="#" class="bg-white p-4 rounded-xl shadow-sm flex items-center space-x-3">
+                <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
+                    <i class="fas fa-robot text-green-600 text-xl"></i>
+                </div>
+                <div>
+                    <h3 class="font-medium">自动跟单</h3>
+                    <p class="text-sm text-gray-500">设置自动跟单策略</p>
+                </div>
+            </a>
+        </div>
+
+        <!-- Menu List -->
+        <div class="bg-white rounded-xl overflow-hidden">
+            <div class="divide-y divide-gray-100">
+                <a href="#" class="flex items-center justify-between p-4 hover:bg-gray-50">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 bg-purple-100 rounded-full flex items-center justify-center">
+                            <i class="fas fa-wallet text-purple-600"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-medium">我的钱包</h3>
+                            <p class="text-sm text-gray-500">充值提现</p>
+                        </div>
+                    </div>
+                    <i class="fas fa-chevron-right text-gray-400"></i>
+                </a>
+                <a href="#" class="flex items-center justify-between p-4 hover:bg-gray-50">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 bg-yellow-100 rounded-full flex items-center justify-center">
+                            <i class="fas fa-history text-yellow-600"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-medium">交易记录</h3>
+                            <p class="text-sm text-gray-500">查看历史交易</p>
+                        </div>
+                    </div>
+                    <i class="fas fa-chevron-right text-gray-400"></i>
+                </a>
+                <a href="#" class="flex items-center justify-between p-4 hover:bg-gray-50">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 bg-red-100 rounded-full flex items-center justify-center">
+                            <i class="fas fa-heart text-red-600"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-medium">我的收藏</h3>
+                            <p class="text-sm text-gray-500">收藏的带单员</p>
+                        </div>
+                    </div>
+                    <i class="fas fa-chevron-right text-gray-400"></i>
+                </a>
+                <a href="#" class="flex items-center justify-between p-4 hover:bg-gray-50">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center">
+                            <i class="fas fa-cog text-blue-600"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-medium">设置</h3>
+                            <p class="text-sm text-gray-500">账号设置</p>
+                        </div>
+                    </div>
+                    <i class="fas fa-chevron-right text-gray-400"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Telegram Integration -->
+        <div class="bg-white rounded-xl p-4">
+            <div class="flex items-center justify-between mb-4">
+                <h3 class="font-medium">Telegram 绑定</h3>
+                <button class="btn-telegram text-white px-4 py-2 rounded-lg text-sm">
+                    绑定
+                </button>
+            </div>
+            <p class="text-sm text-gray-500">绑定 Telegram 账号后可以：</p>
+            <ul class="mt-2 space-y-2 text-sm text-gray-500">
+                <li class="flex items-center space-x-2">
+                    <i class="fas fa-check text-green-500"></i>
+                    <span>接收实时交易信号</span>
+                </li>
+                <li class="flex items-center space-x-2">
+                    <i class="fas fa-check text-green-500"></i>
+                    <span>开启自动跟单</span>
+                </li>
+                <li class="flex items-center space-x-2">
+                    <i class="fas fa-check text-green-500"></i>
+                    <span>快速充值提现</span>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Logout Button -->
+        <button class="w-full bg-red-50 text-red-600 py-3 rounded-xl font-medium">
+            退出登录
+        </button>
+    </div>
+</body>
+</html> 
